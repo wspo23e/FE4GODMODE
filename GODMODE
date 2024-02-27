@@ -1,0 +1,442 @@
+--//UNVERSIAL GODMODE
+--//UNVERSIAL GODMODE
+
+
+---------------------------------------------------------NEW CHAPTER GODMODE.
+
+
+
+while true do
+    wait()
+
+
+
+
+
+
+
+
+local function freezeHealth()
+    local player = game:GetService("Players").LocalPlayer
+
+    -- Function to freeze the player's health
+    local function freezeHealthValue()
+        local humanoid = player.Character and player.Character:FindFirstChildOfClass("Humanoid")
+        if humanoid then
+            humanoid:SetStateEnabled(Enum.HumanoidStateType.Dead, false)
+            humanoid.Health = humanoid.MaxHealth
+            humanoid:SetStateEnabled(Enum.HumanoidStateType.Dead, false)
+        end
+    end
+
+    -- Disable any events or triggers that can affect the player's health
+    local function disableHealthEvents()
+        local humanoid = player.Character and player.Character:FindFirstChildOfClass("Humanoid")
+        if humanoid then
+            humanoid:GetPropertyChangedSignal("Health"):Connect(function()
+                freezeHealthValue()
+            end)
+        end
+    end
+
+    freezeHealthValue()
+    disableHealthEvents()
+end
+
+freezeHealth()
+
+
+
+
+
+wait()
+
+
+
+
+
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+
+wait(3)
+
+while true do
+    wait(1)
+
+
+
+local function deleteHealthScript()
+    local player = game:GetService("Players").LocalPlayer
+
+    -- Check if the player has a character
+    if player.Character then
+        -- Find and delete the "Health" script in humanoid or character
+        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+        if humanoid then
+            local healthScript = humanoid:FindFirstChild("Health")
+            if healthScript and healthScript:IsA("LuaSourceContainer") then
+                healthScript.Disabled = true
+            end
+        end
+    end
+end
+
+deleteHealthScript()
+
+
+
+
+
+
+wait()
+
+
+
+
+local function deleteHealthScript()
+    local player = game:GetService("Players").LocalPlayer
+
+    -- Check if the player has a character
+    if player.Character then
+        -- Find and delete the "Health" script in humanoid or character
+        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+        if humanoid then
+            local healthScript = humanoid:FindFirstChild("Health")
+            if healthScript and healthScript:IsA("Script") then
+                healthScript:Destroy()
+            end
+        end
+    end
+end
+
+deleteHealthScript()
+
+
+
+
+wait()
+
+
+
+
+local function deleteBodyEffects()
+    local player = game:GetService("Players").LocalPlayer
+
+    -- Check if the player has a character
+    if player.Character then
+        -- Find and delete the "BodyEffects" folder
+        local bodyEffectsFolder = player.Character:FindFirstChild("BodyEffects")
+        if bodyEffectsFolder and bodyEffectsFolder:IsA("Folder") then
+            bodyEffectsFolder:Destroy()
+        end
+    end
+end
+
+deleteBodyEffects()
+
+
+wait()
+print("Anti bodyeffectloaded")
+
+
+while true do
+    wait()
+
+local function destroyAll()
+    -- Destroy body effects in the workspace
+    for _, effect in pairs(game:GetService("Workspace"):GetDescendants()) do
+        if effect:IsA("BodyEffects") then
+            effect:Destroy()
+        end
+    end
+    
+    -- Destroy your character's body effects
+    local player = game:GetService("Players").LocalPlayer
+    if player.Character and player.Character:FindFirstChildOfClass("Humanoid") then
+        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+        for _, effect in pairs(humanoid:GetChildren()) do
+            if effect:IsA("BodyEffects") then
+                effect:Destroy()
+            end
+        end
+    end
+    
+    -- Destroy your humanoid's body effects
+    if player.Character and player.Character:FindFirstChild("Humanoid") then
+        local humanoid = player.Character:FindFirstChild("Humanoid")
+        for _, effect in pairs(humanoid:GetChildren()) do
+            if effect:IsA("BodyEffects") then
+                effect:Destroy()
+            end
+        end
+    end
+end
+
+
+
+end
+
+
+
+
+wait()
+
+
+
+game:GetService("RunService").Heartbeat:Connect(destroyAll)
+
+
+wait(0.01)
+
+local function disableAndKill()
+    -- Disable and kill effects that can trigger health
+    for _, effect in pairs(game:GetService("Workspace"):GetDescendants()) do
+        if effect:IsA("BodyEffects") or effect:IsA("Effect") then
+            effect.Disabled = true
+            effect:Destroy()
+        end
+    end
+    
+    -- Disable and kill effects that can trigger health in your character
+    local player = game:GetService("Players").LocalPlayer
+    if player.Character then
+        for _, effect in pairs(player.Character:GetDescendants()) do
+            if effect:IsA("BodyEffects") or effect:IsA("Effect") then
+                effect.Disabled = true
+                effect:Destroy()
+            end
+        end
+    end
+end
+
+game:GetService("RunService").Heartbeat:Connect(disableAndKill)
+
+end
+
+
+
+while true do
+
+--{ my first multi-line script - styx360
+local a = Instance.new("ForceField")
+a.Parent = workspace.BruhBannadIgen
+
+while true do
+wait()
+game.Workspace.BruhBannadIgen.Humanoid.MaxHealth = 100*50
+
+game.Workspace.BruhBannadIgen.Humanoid.Health = 100*50
+end
+
+
+a.Visible = false
+
+end
+
+
+
+wait(2)
+
+
+while true do
+	game.Workspace.BruhBannadIgen.Humanoid.Health = 100*50
+	wait()
+	game.Workspace.BruhBannadIgen.Humanoid.Health = 100*50
+	wait()
+	game.Workspace.BruhBannadIgen.Humanoid.Health = 100*50
+	wait()
+	game.Workspace.BruhBannadIgen.Humanoid.Health = 100*50
+	wait()
+	game.Workspace.BruhBannadIgen.Humanoid.Health = 100*50
+	wait()
+	game.Workspace.BruhBannadIgen.Humanoid.Health = 100*50
+	wait()
+	game.Workspace.BruhBannadIgen.Humanoid.Health = 100*50
+	wait()
+	game.Workspace.BruhBannadIgen.Humanoid.Health = 100*50
+	wait()
+	game.Workspace.BruhBannadIgen.Humanoid.Health = 100*50
+	wait()
+end
+
+
+
+
+
+while true do
+    wait()
+    humanoid:SetStateEnabled(Enum.HumanoidStateType.Dead, false)
+end
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+
+
+end
+
+
+wait()
+
+while true do
+	for i,v in pairs(game.Players:GetPlayers()) do
+		v.HealthDisplayDistance = 0
+		v.NameDisplayDistance = 0
+	end
+	wait()
+end
+
+
+wait(2)
+
+while true do
+    wait()
+
+local character = game.Players.LocalPlayer.Character
+
+function reloadCharacter()
+    local position = character.HumanoidRootPart.Position
+    character:Destroy()
+    wait(3) -- Change the wait time as needed
+    game.Players.Respawn()
+    wait(1)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(position)
+end
+
+character.Humanoid.HealthChanged:Connect(function()
+    reloadCharacter()
+end)
+
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").Died:Connect(function()
+    reloadCharacter()
+end)
+
+end
+
+
+
+
+
+----------------------------------------NEXT CHAPTER STARTS HERE GODMODE LEVEL2
+
+----------------------------------------NEXT CHAPTER STARTS HERE GODMODE LEVEL2
+
+----------------------------------------NEXT CHAPTER STARTS HERE GODMODE LEVEL2
+
+----------------------------------------NEXT CHAPTER STARTS HERE GODMODE LEVEL2
+
+----------------------------------------NEXT CHAPTER STARTS HERE GODMODE LEVEL2
+
+----------------------------------------NEXT CHAPTER STARTS HERE GODMODE LEVEL2
+
+
+
+
+
+
+wait(1)
+----------------------------------------------------------------------------------------------------
+--//BLADE BALL GODMODE
+
+
+--local gameID = game.GameId
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:FindFirstChildOfClass("Humanoid")
+local workspace = game.Workspace
+
+local deadFolder = workspace:FindFirstChild("Dead") or workspace:FindFirstChild("dead")
+local aliveFolder = workspace:FindFirstChild("Alive") or workspace:FindFirstChild("alive")
+
+if deadFolder and deadFolder:FindFirstChild(character.Name) then
+    character.Parent = aliveFolder
+end
+
+if gameID == 13772394625 then
+  local teleportPosition = CFrame.new(-210.57568359375, 3.870238780975342, -84.08824157714844) -- Change the position to your desired teleport location
+    
+    if aliveFolder:FindFirstChild(character.Name) then
+        humanoid.CFrame = teleportPosition
+    end
+end
+
+
+
+
+wait(0.1)
+
+
+
+
+local player = game.Players.LocalPlayer
+local teamService = game:GetService("Teams")
+local teamName = "Playing" -- Change this to the name of the team you want to join
+
+local function joinTeam()
+    local team = teamService:FindFirstChild(teamName)
+    
+    if team then
+        player.Team = team
+    end
+end
+
+joinTeam()
+
+
+
+
+wait(2)
+
+
+while true do
+    wait()
+        -- when you reset make sure to re-execute this or just make this execute in a loop
+for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
+    if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
+    game:GetService("RunService").Heartbeat:connect(function()
+    v.Velocity = Vector3.new(-30,0,0)
+    end)
+    end
+    end
+ 
+end
+
+
+
+wait(2)
+
+
+
+while true do
+    wait()
+        -- when you reset make sure to re-execute this or just make this execute in a loop
+for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
+    if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
+    game:GetService("RunService").Heartbeat:connect(function()
+    v.Velocity = Vector3.new(-30,0,0)
+    end)
+    end
+    end
+ 
+end
+
+
+
+wait(2)
+
+
+
+while true do
+    wait()
+        -- when you reset make sure to re-execute this or just make this execute in a loop
+for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
+    if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
+    game:GetService("RunService").Heartbeat:connect(function()
+    v.Velocity = Vector3.new(-30,0,0)
+    end)
+    end
+    end
+ 
+end
